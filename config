@@ -1,0 +1,17 @@
+clusters:
+  -
+    clusters:
+      certificate-authority: /root/ca.crt
+      server: "https://192.168.99.100:8443"
+    name: myk8scluster
+contexts: 
+  - 
+    context:
+      cluster: myk8scluster
+      user: prajwal
+users:
+  -
+    name: prajwal
+    user:
+      client-certificate: /root/client.crt
+      client-key: /root/client.key
